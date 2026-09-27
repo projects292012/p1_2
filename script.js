@@ -356,7 +356,7 @@ async function download_pdf() {
         // Calculate image dimensions
         const imgWidth = pdfWidth;
         const imgHeight =
-            (canvas.height * imgWidth) / canvas.width;
+            ((canvas.height * imgWidth) / canvas.width)-20;
 
         let heightLeft = imgHeight;
         let position = 10;
@@ -376,14 +376,14 @@ async function download_pdf() {
         // Add remaining pages
         while (heightLeft > 0) {
 
-            position = heightLeft - imgHeight + 50;
+            position = heightLeft - imgHeight + 10;
 
             pdf.addPage();
 
             pdf.addImage(
                 canvas.toDataURL("image/png"),
                 "PNG",
-                50,
+                10,
                 position,
                 imgWidth,
                 imgHeight
