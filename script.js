@@ -356,7 +356,7 @@ async function download_pdf() {
         // Calculate image dimensions
         const imgWidth = pdfWidth;
         const imgHeight =
-            ((canvas.height * imgWidth) / canvas.width)-20;
+            ((canvas.height * imgWidth) / canvas.width)-30;
 
         let heightLeft = imgHeight;
         let position = 10;
