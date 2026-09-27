@@ -376,14 +376,14 @@ async function download_pdf() {
         // Add remaining pages
         while (heightLeft > 0) {
 
-            position = heightLeft - imgHeight + 10;
+            position = heightLeft - imgHeight + 50;
 
             pdf.addPage();
 
             pdf.addImage(
                 canvas.toDataURL("image/png"),
                 "PNG",
-                10,
+                50,
                 position,
                 imgWidth,
                 imgHeight
