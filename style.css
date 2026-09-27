@@ -1,0 +1,241 @@
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.paitent_details table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+
+}
+.td_bold{
+	font-weight: bolder;
+}
+.paitent_details tr{
+	border-bottom: 1px solid lightgray; 
+
+}
+.paitent_details td{
+	padding: 14px;
+}
+.add_tr{
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	background-color: #c2d4f2;
+	color: #06142b;
+	opacity: 0.7;
+}
+.add_tr:hover{
+	opacity: 1;
+}
+.blood_report_div{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 0px;
+}
+.blood_report_div table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+.blood_report_div td{
+	width: 25%;
+	border:2px solid black;
+}
+#fill{
+	width: 50px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: #75a0e0;
+	color: white;
+	font-weight: bolder;
+}
+#submit{
+	width: 75px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: #75a0e0;
+	color: white;
+	font-weight: bolder;
+}
+#submit1{
+	width: 75px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: #75a0e0;
+	color: white;
+	font-weight: bolder;
+}
+.blood_report_div td.td_btn {
+	border: none;
+	background: transparent;
+	width: auto;
+}
+.tr_heading td:not(.td_btn) {
+	background-color: #022152;
+	color: white;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	align-items: center;
+}
+.row1{	
+	padding: 15px;
+	position: relative;
+	left: calc(47% - 10px);
+}
+.header_img{
+	width: 50px;
+	height: 50px;
+}
+.header{
+	margin-bottom: 20px;
+}
+.header h3{
+	color: #4a2169;
+}
+.delete{
+	background-color: transparent !important;
+}
+.option_div{
+	position: absolute;
+	width: 300px;
+	min-height: 200px;
+	background-color: #507496;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 5px gray;
+	padding: 10px;
+	display: none;
+	position: absolute;
+  	inset: 0;
+  	place-self: center;
+}
+.option_divs{
+	position: absolute;
+	width: 300px;
+	min-height: 200px;
+	background-color: #507496;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 5px gray;
+	padding: 10px;
+
+	position: absolute;
+  	inset: 0;
+  	place-self: center;
+}
+.test_div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+.ok{
+	background-color: #e8c699;
+	margin-top: 20px;
+	width: 100px;
+	color: white;
+	font-weight: bolder;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	box-shadow: 2px 2px 2px gray;
+}
+select{
+	width: 95%;
+	height: 30px;
+	border-radius: 5px;
+	margin: 10px;
+}
+select:focus{
+	border-color: #e6dfda;
+    box-shadow: 0 0 0 3px #faf3ed;
+}
+input{
+	width: 95%;
+	height: 30px;
+	border-radius: 5px;
+	margin: 10px;
+}
+input:focus{
+	border-color: #e6dfda;
+    box-shadow: 0 0 0 3px #faf3ed;
+}
+.blood_report_div tr:not(.tr_heading){
+	background-color: #d0e7f5;
+	padding: 10px;
+}
+.blood_report_div td{
+	padding: 7px;
+}
+.tr_heading td{
+	font-size: 19px;
+	font-weight: bolder;
+}
+.tr_title td{
+	border: none !important;
+	padding: 0px;
+}
+.tr_title h3{
+	color: blue;
+	font-size: 24px;
+}
+.doctor_h3{
+	color: blue;
+	font-size: 24px;
+}
+.tr_title{
+	background-color: transparent !important;
+	text-align: left;
+	padding: 0px;
+}
+button:hover{
+	transform: scale(1.1);
+}
+#add_notes{
+	width: 100px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: #75a0e0;
+	color: white;
+	font-weight: bolder;
+}
+#details_btn{
+	width: 90px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: #75a0e0;
+	color: white;
+	font-weight: bolder;
+}
+#download_btn{
+	width: 90px;
+	height: 45px;
+	border-radius: 10px;
+	background-color: #75a0e0;
+	color: white;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+#btn_div{
+	width: 100%;
+	text-align: right;
+}
