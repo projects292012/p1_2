@@ -337,7 +337,7 @@ async function download_pdf() {
     let count = 0;
 
     validation_elements.forEach(element => {
-          if (element.value == "" || element.value == "(Normal : 18.5 - 25 ; Overweight : 25 - 30 ;Obese > 30)") {
+          if (element.value == "") {
             count++;
       }
     });
