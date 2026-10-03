@@ -332,12 +332,12 @@ function download_elements(){
         button.style.display = "none"; 
     });
 }
-function validation_func(){
+async function download_pdf() {
     const validation_elements = document.querySelectorAll('.validation');
     let count = 0;
 
     validation_elements.forEach(element => {
-          if (element.value == "") {
+          if (element.value == "" || element.value == "(Normal : 18.5 - 25 ; Overweight : 25 - 30 ;Obese > 30)") {
             count++;
       }
     });
@@ -345,9 +345,7 @@ function validation_func(){
     if (count > 0) {
           alert('complete all details');
     }
-}
-async function download_pdf() {
-    validation_func()
+    else{
     download_elements()
     try {
 
@@ -417,4 +415,5 @@ async function download_pdf() {
         alert("PDF could not be generated. Please check the console.");
 
     }
+}
 }
