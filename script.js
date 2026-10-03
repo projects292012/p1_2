@@ -332,7 +332,22 @@ function download_elements(){
         button.style.display = "none"; 
     });
 }
+function validation_func(){
+    const validation_elements = document.querySelectorAll('.validation');
+    let count = 0;
+
+    validation_elements.forEach(element => {
+          if (element.value == "") {
+            count++;
+      }
+    });
+
+    if (count > 0) {
+          alert('complete all details');
+    }
+}
 async function download_pdf() {
+    validation_func()
     download_elements()
     try {
 
