@@ -268,21 +268,97 @@ submit_blood.addEventListener('click',function(){
             input2.style.color = "black"
             input2.style.fontWeight = "bold"
         }
-        if (Number(input2.value >= 4400 && input1.value <= 110000)) {
+        if (Number(input2.value >= 4400 && input2.value <= 110000)) {
             input2.style.color = "black"
         }
         else{
             input2.style.color = "black"
             input2.style.fontWeight = "bold"
         }
-        if (Number(input3.value >= 1.5 && input1.value <= 4.5)) {
+        if (Number(input3.value >= 1.5 && input3.value <= 4.5)) {
             input3.style.color = "black"
         }
         else{
             input3.style.color = "black"
             input3.style.fontWeight = "bold"
         }
-    }
+         if (Number(input4.value >= 4.5 && input5.value <= 6.5)) {
+            input4.style.color = "black"
+        }
+        else{
+            input4.style.color = "black"
+            input4.style.fontWeight = "bold"
+        }
+         if (Number(input5.value >= 40 && input5.value <= 52)) {
+            input5.style.color = "black"
+        }
+        else{
+            input5.style.color = "black"
+            input5.style.fontWeight = "bold"
+        }
+         if (Number(input6.value >= 80 && input6.value <= 100)) {
+            input6.style.color = "black"
+        }
+        else{
+            input6.style.color = "black"
+            input6.style.fontWeight = "bold"
+        }
+         if (Number(input7.value >= 27 && input7.value <= 34)) {
+            input7.style.color = "black"
+        }
+        else{
+            input7.style.color = "black"
+            input7.style.fontWeight = "bold"
+        }
+         if (Number(input8.value >= 31 && input8.value <= 36)) {
+            input8.style.color = "black"
+        }
+        else{
+            input8.style.color = "black"
+            input8.style.fontWeight = "bold"
+        }
+         if (Number(input9.value >= 54 && input9.value <= 75)) {
+            input9.style.color = "black"
+        }
+        else{
+            input9.style.color = "black"
+            input9.style.fontWeight = "bold"
+        }
+         if (Number(input10.value >= 20 && input10.value <= 40)) {
+            input10.style.color = "black"
+        }
+        else{
+            input10.style.color = "black"
+            input10.style.fontWeight = "bold"
+        }
+         if (Number(input11.value >= 1 && input11.value <= 6)) {
+            input11.style.color = "black"
+        }
+        else{
+            input11.style.color = "black"
+            input11.style.fontWeight = "bold"
+        }
+         if (Number(input12.value >= 2 && input12.value <= 10)) {
+            input12.style.color = "black"
+        }
+        else{
+            input12.style.color = "black"
+            input12.style.fontWeight = "bold"
+        }
+         if (Number(input13.value >= 0 && input13.value <= 10)) {
+            input13.style.color = "black"
+        }
+        else{
+            input13.style.color = "black"
+            input13.style.fontWeight = "bold"
+        }
+         if (Number(input14.value >= 70 && input14.value <= 140)) {
+            input14.style.color = "black"
+        }
+        else{
+            input14.style.color = "black"
+            input14.style.fontWeight = "bold"
+        }
 })
 var submit_eye = document.getElementById('submit1')
 submit_eye.addEventListener('click',function(){
