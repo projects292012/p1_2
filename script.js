@@ -192,84 +192,154 @@ add_input.addEventListener('click',function(){
         }
     })
 })
-var submit_blood = document.getElementById('submit')
-submit_blood.addEventListener('click',function(){
-    var input1 = document.getElementById('input1')
-    var input2 = document.getElementById('input2')
-    var input3 = document.getElementById('input3')
-    var input4 = document.getElementById('input4')
-    var input5 = document.getElementById('input5')
-    var input6 = document.getElementById('input6')
-    var input7 = document.getElementById('input7')
-    var input8 = document.getElementById('input8')
-    var input9 = document.getElementById('input9')
-    var input10 = document.getElementById('input10')
-    var input11 = document.getElementById('input11')
-    var input12 = document.getElementById('input12')
-    var input13 = document.getElementById('input13')
-    var input14 = document.getElementById('input14')
-    if (input1.value == "" || input2.value == "" || input3.value == "" || input4.value == "" || input5.value == "" || input6.value == "" || input7.value == "" || input8.value == "" || input9.value == "" || input10.value == "" || input11.value == "" || input12.value == "" || input13.value == "" || input14.value == "") {
-        alert('Complete All Fields Before Submiting')
-    }
-    else{
-        input1.style.backgroundColor = "transparent"
-        input1.style.border = "none"
-        input1.disabled = "true"
-        input2.style.backgroundColor = "transparent"
-        input2.style.border = "none"
-        input2.disabled = "true"
-        input3.style.backgroundColor = "transparent"
-        input3.style.border = "none"
-        input3.disabled = "true"
-        input4.style.backgroundColor = "transparent"
-        input4.style.border = "none"
-        input4.disabled = "true"
-        input5.style.backgroundColor = "transparent"
-        input5.style.border = "none"
-        input5.disabled = "true"
-        input6.style.backgroundColor = "transparent"
-        input6.style.border = "none"
-        input6.disabled = "true"
-        input7.style.backgroundColor = "transparent"
-        input7.style.border = "none"
-        input7.disabled = "true"
-        input8.style.backgroundColor = "transparent"
-        input8.style.border = "none"
-        input8.disabled = "true"
-        input9.style.backgroundColor = "transparent"
-        input9.style.border = "none"
-        input9.disabled = "true"
-        input10.style.backgroundColor = "transparent"
-        input10.style.border = "none"
-        input10.disabled = "true"
-        input11.style.backgroundColor = "transparent"
-        input11.style.border = "none"
-        input11.disabled = "true"
-        input12.style.backgroundColor = "transparent"
-        input12.style.border = "none"
-        input12.disabled = "true"
-        input13.style.backgroundColor = "transparent"
-        input13.style.border = "none"
-        input13.disabled = "true"
-        input14.style.backgroundColor = "transparent"
-        input14.style.border = "none"
-        input14.disabled = "true"
-        if (Number(input1.value) >= 13.5 && Number(input1.value) <= 18.5) { 
-            input1.style.color = "black" 
-            input1.style.fontWeight = "normal"
-        } else { 
-            input1.style.color = "black" 
-            input1.style.fontWeight = "bold" 
-        } 
-
-        if (Number(input2.value) >= 4400 && Number(input2.value) <= 110000) { 
-            input2.style.color = "black" 
-            input2.style.fontWeight = "normal"
-        } else { 
-            input2.style.color = "black" 
-            input2.style.fontWeight = "bold" 
-        } 
+var submit_blood = document.getElementById('submit') 
+submit_blood.addEventListener('click',function(){ 
+var input1 = document.getElementById('input1') 
+var input2 = document.getElementById('input2') 
+var input3 = document.getElementById('input3') 
+var input4 = document.getElementById('input4') 
+var input5 = document.getElementById('input5') 
+var input6 = document.getElementById('input6') 
+var input7 = document.getElementById('input7') 
+var input8 = document.getElementById('input8') 
+var input9 = document.getElementById('input9') 
+var input10 = document.getElementById('input10') 
+var input11 = document.getElementById('input11') 
+var input12 = document.getElementById('input12') 
+var input13 = document.getElementById('input13') 
+var input14 = document.getElementById('input14') 
+if (input1.value == "" || input2.value == "" || input3.value == "" || input4.value == "" || input5.value == "" || input6.value == "" || input7.value == "" || input8.value == "" || input9.value == "" || input10.value == "" || input11.value == "" || input12.value == "" || input13.value == "" || input14.value == "") { 
+alert('Complete All Fields Before Submiting') 
+} else{ 
+input1.style.backgroundColor = "transparent" 
+input1.style.border = "none" 
+input1.disabled = "true" 
+input2.style.backgroundColor = "transparent" 
+input2.style.border = "none" 
+input2.disabled = "true" 
+input3.style.backgroundColor = "transparent" 
+input3.style.border = "none" 
+input3.disabled = "true" 
+input4.style.backgroundColor = "transparent" 
+input4.style.border = "none" 
+input4.disabled = "true" 
+input5.style.backgroundColor = "transparent" 
+input5.style.border = "none" 
+input5.disabled = "true" 
+input6.style.backgroundColor = "transparent" 
+input6.style.border = "none" 
+input6.disabled = "true" 
+input7.style.backgroundColor = "transparent" 
+input7.style.border = "none" 
+input7.disabled = "true" 
+input8.style.backgroundColor = "transparent" 
+input8.style.border = "none" 
+input8.disabled = "true" 
+input9.style.backgroundColor = "transparent" 
+input9.style.border = "none" 
+input9.disabled = "true" 
+input10.style.backgroundColor = "transparent" 
+input10.style.border = "none" 
+input10.disabled = "true" 
+input11.style.backgroundColor = "transparent" 
+input11.style.border = "none" 
+input11.disabled = "true" 
+input12.style.backgroundColor = "transparent" 
+input12.style.border = "none" 
+input12.disabled = "true" 
+input13.style.backgroundColor = "transparent" 
+input13.style.border = "none" 
+input13.disabled = "true" 
+input14.style.backgroundColor = "transparent" 
+input14.style.border = "none" 
+input14.disabled = "true" 
+if (Number(input1.value) >= 13.5 && Number(input1.value) <= 18.5) { 
+input1.style.color = "black" 
+} else{ 
+input1.style.color = "black" 
+input1.style.fontWeight = "bold" 
+} 
+if (Number(input2.value) >= 4400 && Number(input2.value) <= 110000) { 
+input2.style.color = "black" 
+} else{ 
+input2.style.color = "black" 
+input2.style.fontWeight = "bold" 
+} 
+if (Number(input3.value) >= 1.5 && Number(input3.value) <= 4.5) { 
+input3.style.color = "black" 
+} else{ 
+input3.style.color = "black" 
+input3.style.fontWeight = "bold" 
+} 
+if (Number(input4.value) >= 4.5 && Number(input4.value) <= 6.5) { 
+input4.style.color = "black" 
+} else{ 
+input4.style.color = "black" 
+input4.style.fontWeight = "bold" 
+} 
+if (Number(input5.value) >= 40 && Number(input5.value) <= 52) { 
+input5.style.color = "black" 
+} else{ 
+input5.style.color = "black" 
+input5.style.fontWeight = "bold" 
+} 
+if (Number(input6.value) >= 80 && Number(input6.value) <= 100) { 
+input6.style.color = "black" 
+} else{ 
+input6.style.color = "black" 
+input6.style.fontWeight = "bold" 
+} 
+if (Number(input7.value) >= 27 && Number(input7.value) <= 34) { 
+input7.style.color = "black" 
+} else{ 
+input7.style.color = "black" 
+input7.style.fontWeight = "bold" 
+} 
+if (Number(input8.value) >= 31 && Number(input8.value) <= 36) { 
+input8.style.color = "black" 
+} else{ 
+input8.style.color = "black" 
+input8.style.fontWeight = "bold" 
+} 
+if (Number(input9.value) >= 54 && Number(input9.value) <= 75) { 
+input9.style.color = "black" 
+} else{ 
+input9.style.color = "black" 
+input9.style.fontWeight = "bold" 
+} 
+if (Number(input10.value) >= 20 && Number(input10.value) <= 40) { 
+input10.style.color = "black" 
+} else{ 
+input10.style.color = "black" 
+input10.style.fontWeight = "bold" 
+} 
+if (Number(input11.value) >= 1 && Number(input11.value) <= 6) { 
+input11.style.color = "black" 
+} else{ 
+input11.style.color = "black" 
+input11.style.fontWeight = "bold" 
+} 
+if (Number(input12.value) >= 2 && Number(input12.value) <= 10) { 
+input12.style.color = "black" 
+} else{ 
+input12.style.color = "black" 
+input12.style.fontWeight = "bold" 
+} 
+if (Number(input13.value) >= 0 && Number(input13.value) <= 10) { 
+input13.style.color = "black" 
+} else{ 
+input13.style.color = "black" 
+input13.style.fontWeight = "bold" 
+} 
+if (Number(input14.value) >= 70 && Number(input14.value) <= 140) { 
+input14.style.color = "black" 
+} else{ 
+input14.style.color = "black" 
+input14.style.fontWeight = "bold" 
+} 
+} 
 })
+
 var submit_eye = document.getElementById('submit1')
 submit_eye.addEventListener('click',function(){
     var input15 = document.getElementById('input15')
