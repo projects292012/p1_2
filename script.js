@@ -332,7 +332,7 @@ function download_elements(){
         button.style.display = "none"; 
     });
 }
-function validation_func(
+function validation_func(){
     const validation_elements = document.querySelectorAll('.validation');
     let count = 0;
 
@@ -350,7 +350,7 @@ function validation_func(
     else{
             download_pdf()
         }
-)
+}
 async function download_pdf() {
     download_elements()
     try {
