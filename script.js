@@ -332,20 +332,25 @@ function download_elements(){
         button.style.display = "none"; 
     });
 }
-async function download_pdf() {
+function validation_func(
     const validation_elements = document.querySelectorAll('.validation');
     let count = 0;
 
     validation_elements.forEach(element => {
           if (element.value == "") {
             count++;
+            
       }
+        else{
+            download_pdf()
+        }
     });
 
     if (count > 0) {
           alert('complete all details');
     }
-    else{
+)
+async function download_pdf() {
     download_elements()
     try {
 
@@ -415,5 +420,4 @@ async function download_pdf() {
         alert("PDF could not be generated. Please check the console.");
 
     }
-}
 }
