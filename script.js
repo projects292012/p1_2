@@ -341,14 +341,15 @@ function validation_func(
             count++;
             
       }
-        else{
-            download_pdf()
-        }
+        
     });
 
     if (count > 0) {
           alert('complete all details');
     }
+    else{
+            download_pdf()
+        }
 )
 async function download_pdf() {
     download_elements()
